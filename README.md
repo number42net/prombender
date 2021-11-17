@@ -1,23 +1,42 @@
 # PromBender
 
-Modify and prepare binary files for writing to programable ROMs
+Modify and prepare binary files for writing to programmable ROMs
 
-## Combine
+## Requirements
 
++ Windows / Linux / Unix / MacOS
++ Python 3.6
++ Pip (for installation)
+
+## Installation
+
+The easiest way to install PromBender is by using pip:
+
+```
+pip3 install https://github.com/number42net/prombender.git
+```
+
+## Usage
+
+### Combine
+Combine two or more files into a single ROM, either in sequence or in odd / even order.
+
+```
 usage: prombender combine --out FILE [--in FILE [FILE ...]] [--even FILE] [--odd FILE]
 
 required arguments:
   --out FILE            Output file
 
 required arguments for regular combine:
-  --in FILE [FILE ...]  Comma seperated list of files
+  --in FILE [FILE ...]  List of files to combine
 
 required arguments for odd / even combine:
   --even FILE           Source file with even bytes
   --odd FILE            Source file with odd bytes
-  
-## Split
-
+```
+### Split
+Split a single file into multiple ROMs, either in sequence or in an odd / even order.
+```
 usage: prombender split --in FILE [--out PATTERN] [--count NUMBER] [--even FILE] [--odd FILE]
 
 required arguments:
@@ -30,8 +49,10 @@ optional arguments for regular split:
 required arguments for odd / even split:
   --even FILE     Source file with even bytes
   --odd FILE      Source file with odd bytes
-  
-## Concatenate
+```
+### Concatenate
+Concatenate a single file multiple times to fill a larger ROM.
+```
 usage: prombender concatenate --in FILE --out FILE [--kbits KILO_BITS | --copies NUMBER]
 
 required arguments:
@@ -41,9 +62,10 @@ required arguments:
 optional arguments:
   --kbits KILO_BITS  Final size in kilobits. Example: for a 27C256 EPROM, set this to 256
   --copies NUMBER    Number of copies to make. Example: to fill a 256k EPROM with a 64k file set this to 4
-  
-## Pad
-
+```
+### Pad
+Add padding to a file to create a ROM of a specific size.
+```
 usage: prombender pad --in FILE --out FILE --kbits INTEGER [--hex HEX | --dec INTEGER] [--bottom | --top]
 
 required arguments:
@@ -56,3 +78,4 @@ optional arguments:
   --dec INTEGER    Use the decimal value for padding
   --bottom         Pad the bottom, data stays at the beginning of the file
   --top            Pad the top, data moves to the end of the file
+```

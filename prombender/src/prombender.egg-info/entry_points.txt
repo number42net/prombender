@@ -1,0 +1,3 @@
+[console_scripts]
+prombender = prombender.command_line:main
+
