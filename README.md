@@ -1,5 +1,7 @@
 # PromBender
 
+![logo](https://raw.githubusercontent.com/number42net/prombender/main/images/mini.png)
+
 Modify and prepare binary files for writing to programmable ROMs
 
 ## Requirements
