@@ -15,7 +15,7 @@ Modify and prepare binary files for writing to programmable ROMs
 The easiest way to install PromBender is by using pip:
 
 ```
-pip3 install https://github.com/number42net/prombender.git
+pip3 install git+https://github.com/number42net/prombender.git
 ```
 
 ## Usage
