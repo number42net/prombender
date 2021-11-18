@@ -1,7 +1,0 @@
-README
-setup.py
-src/prombender.egg-info/PKG-INFO
-src/prombender.egg-info/SOURCES.txt
-src/prombender.egg-info/dependency_links.txt
-src/prombender.egg-info/entry_points.txt
-src/prombender.egg-info/top_level.txt
