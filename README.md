@@ -2,7 +2,11 @@
 
 ![logo](https://raw.githubusercontent.com/number42net/prombender/main/images/mini.png)
 
-Modify and prepare binary files for writing to programmable ROMs
+Bend programable ROM images to your will using PromBender! 
+
++ Combine and split ROM images, either in sequence or in odd / even pairs
++ Concatenate images to fill a ROM of a specfic size
++ Pad your own images with any value to fill a ROM of a specific size
 
 ## Requirements
 
