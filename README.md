@@ -2,7 +2,7 @@
 
 ![logo](https://raw.githubusercontent.com/number42net/prombender/main/images/mini.png)
 
-Bend programable ROM images to your will using PromBender! 
+Bend programmable ROM images to your will using PromBender! 
 
 + Combine and split ROM images, either in sequence or in odd / even pairs
 + Concatenate images to fill a ROM of a specfic size
